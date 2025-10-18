@@ -8,14 +8,31 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
 import Link from "next/link";
+import { Alert, AlertDescription, AlertTitle } from "../ui/alert";
+import { Terminal } from "lucide-react";
 
 export default function InteractiveMap({ points }: { points: CulturalPoint[] }) {
   const [selectedPoint, setSelectedPoint] = useState<CulturalPoint | null>(null);
 
   const mapCenter = { lat: 40.75, lng: -73.98 };
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
+  if (!apiKey) {
+    return (
+        <div className="flex h-full w-full items-center justify-center bg-muted">
+            <Alert variant="destructive" className="w-auto">
+                <Terminal className="h-4 w-4" />
+                <AlertTitle>Google Maps API Key Missing</AlertTitle>
+                <AlertDescription>
+                    Please add your Google Maps API Key to the .env.local file.
+                </AlertDescription>
+            </Alert>
+        </div>
+    )
+  }
 
   return (
-    <APIProvider>
+    <APIProvider apiKey={apiKey}>
       <Map
         defaultCenter={mapCenter}
         defaultZoom={12}

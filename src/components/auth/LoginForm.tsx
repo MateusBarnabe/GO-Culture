@@ -37,10 +37,10 @@ import { Logo } from "@/components/icons/Logo";
 import { Separator } from "@/components/ui/separator";
 
 const formSchema = z.object({
-  email: z.string().email({ message: "Please enter a valid email." }),
+  email: z.string().email({ message: "Por favor, insira um email válido." }),
   password: z
     .string()
-    .min(6, { message: "Password must be at least 6 characters." }),
+    .min(6, { message: "A senha deve ter pelo menos 6 caracteres." }),
 });
 
 export default function LoginForm() {
@@ -64,7 +64,7 @@ export default function LoginForm() {
       router.push("/");
     } catch (error: any) {
       toast({
-        title: "Error signing in",
+        title: "Erro ao entrar",
         description: error.message,
         variant: "destructive",
       });
@@ -81,7 +81,7 @@ export default function LoginForm() {
       router.push("/");
     } catch (error: any) {
       toast({
-        title: "Error with Google sign-in",
+        title: "Erro ao entrar com o Google",
         description: error.message,
         variant: "destructive",
       });
@@ -96,8 +96,8 @@ export default function LoginForm() {
         <div className="mx-auto mb-4">
           <Logo className="h-16 w-16" />
         </div>
-        <CardTitle className="font-headline text-2xl">Welcome Back!</CardTitle>
-        <CardDescription>Log in to continue your adventure.</CardDescription>
+        <CardTitle className="font-headline text-2xl">Bem-vindo de Volta!</CardTitle>
+        <CardDescription>Faça login para continuar sua aventura.</CardDescription>
       </CardHeader>
       <CardContent>
         <Button
@@ -111,7 +111,7 @@ export default function LoginForm() {
           ) : (
             <svg className="mr-2 h-4 w-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 126 23.4 172.9 61.9l-76.2 64.5C308.6 102.3 282.7 90 248 90c-82.3 0-148.8 66.5-148.8 148.8s66.5 148.8 148.8 148.8c99.5 0 129.2-78.2 132.8-114.2H248v-85.3h236.1c2.3 12.7 3.9 26.9 3.9 41.4z"></path></svg>
           )}
-          Continue with Google
+          Continuar com o Google
         </Button>
         <div className="relative my-6">
           <Separator />
@@ -120,7 +120,7 @@ export default function LoginForm() {
           </div>
           <div className="relative flex justify-center text-xs uppercase">
             <span className="bg-card px-2 text-muted-foreground">
-              Or continue with
+              Ou continue com
             </span>
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function LoginForm() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="you@example.com" {...field} />
+                    <Input placeholder="voce@exemplo.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -144,7 +144,7 @@ export default function LoginForm() {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Password</FormLabel>
+                  <FormLabel>Senha</FormLabel>
                   <FormControl>
                     <Input type="password" placeholder="••••••••" {...field} />
                   </FormControl>
@@ -156,16 +156,16 @@ export default function LoginForm() {
               {isLoading && (
                 <LoaderCircle className="mr-2 h-4 w-4 animate-spin" />
               )}
-              Log In
+              Entrar
             </Button>
           </form>
         </Form>
       </CardContent>
       <CardFooter className="text-sm">
         <p className="w-full text-center text-muted-foreground">
-          Don&apos;t have an account?{" "}
+          Não tem uma conta?{" "}
           <Link href="/signup" className="font-medium text-primary hover:underline">
-            Sign up
+            Cadastre-se
           </Link>
         </p>
       </CardFooter>

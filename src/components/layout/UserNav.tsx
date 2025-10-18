@@ -30,10 +30,10 @@ export default function UserNav() {
     return (
       <div className="flex items-center gap-2">
         <Button asChild variant="ghost" size="sm">
-          <Link href="/login">Log In</Link>
+          <Link href="/login">Entrar</Link>
         </Button>
         <Button asChild size="sm">
-          <Link href="/signup">Sign Up</Link>
+          <Link href="/signup">Cadastrar</Link>
         </Button>
       </div>
     );
@@ -69,14 +69,14 @@ export default function UserNav() {
           <Link href="/profile">
             <DropdownMenuItem>
               <UserIcon className="mr-2 h-4 w-4" />
-              <span>Profile</span>
+              <span>Perfil</span>
             </DropdownMenuItem>
           </Link>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem onClick={() => signOut()}>
           <LogOut className="mr-2 h-4 w-4" />
-          <span>Log out</span>
+          <span>Sair</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

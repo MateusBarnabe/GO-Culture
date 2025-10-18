@@ -6,19 +6,19 @@ export default function ProfilePage() {
     <div className="container py-8">
       <div className="flex items-center gap-4 mb-8">
         <User className="h-8 w-8 text-primary" />
-        <h1 className="text-3xl font-bold font-headline">My Profile</h1>
+        <h1 className="text-3xl font-bold font-headline">Meu Perfil</h1>
       </div>
       <Card>
         <CardHeader>
-          <CardTitle>Coming Soon!</CardTitle>
+          <CardTitle>Em Breve!</CardTitle>
           <CardDescription>
-            Your user profile is under construction. Soon you'll be able to see your collection, badges, and level up!
+            Seu perfil de usuário está em construção. Em breve você poderá ver sua coleção, emblemas e subir de nível!
           </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex flex-col items-center justify-center text-center p-8 border-2 border-dashed rounded-lg">
             <User className="h-16 w-16 text-muted-foreground" />
-            <p className="mt-4 text-muted-foreground">Your collection and achievements will be displayed here.</p>
+            <p className="mt-4 text-muted-foreground">Sua coleção e conquistas serão exibidas aqui.</p>
           </div>
         </CardContent>
       </Card>

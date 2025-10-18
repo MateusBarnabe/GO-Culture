@@ -23,7 +23,7 @@ export default function Header() {
           >
             <div className="flex items-center gap-2">
               <Map className="h-4 w-4" />
-              <span>Map</span>
+              <span>Mapa</span>
             </div>
           </Link>
           <Link
@@ -45,7 +45,7 @@ export default function Header() {
           >
              <div className="flex items-center gap-2">
               <User className="h-4 w-4" />
-              <span>Profile</span>
+              <span>Perfil</span>
             </div>
           </Link>
         </nav>

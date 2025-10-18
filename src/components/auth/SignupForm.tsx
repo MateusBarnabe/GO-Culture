@@ -38,11 +38,11 @@ import { Logo } from "@/components/icons/Logo";
 import { Separator } from "@/components/ui/separator";
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email." }),
+  name: z.string().min(2, { message: "O nome deve ter pelo menos 2 caracteres." }),
+  email: z.string().email({ message: "Por favor, insira um email válido." }),
   password: z
     .string()
-    .min(6, { message: "Password must be at least 6 characters." }),
+    .min(6, { message: "A senha deve ter pelo menos 6 caracteres." }),
 });
 
 export default function SignupForm() {
@@ -74,7 +74,7 @@ export default function SignupForm() {
       router.push("/");
     } catch (error: any) {
       toast({
-        title: "Error creating account",
+        title: "Erro ao criar conta",
         description: error.message,
         variant: "destructive",
       });
@@ -91,7 +91,7 @@ export default function SignupForm() {
       router.push("/");
     } catch (error: any) {
       toast({
-        title: "Error with Google sign-in",
+        title: "Erro ao entrar com o Google",
         description: error.message,
         variant: "destructive",
       });
@@ -107,8 +107,8 @@ export default function SignupForm() {
         <div className="mx-auto mb-4">
           <Logo className="h-16 w-16" />
         </div>
-        <CardTitle className="font-headline text-2xl">Create an Account</CardTitle>
-        <CardDescription>Join the adventure and start exploring!</CardDescription>
+        <CardTitle className="font-headline text-2xl">Crie uma Conta</CardTitle>
+        <CardDescription>Junte-se à aventura e comece a explorar!</CardDescription>
       </CardHeader>
       <CardContent>
         <Button
@@ -122,7 +122,7 @@ export default function SignupForm() {
           ) : (
              <svg className="mr-2 h-4 w-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 126 23.4 172.9 61.9l-76.2 64.5C308.6 102.3 282.7 90 248 90c-82.3 0-148.8 66.5-148.8 148.8s66.5 148.8 148.8 148.8c99.5 0 129.2-78.2 132.8-114.2H248v-85.3h236.1c2.3 12.7 3.9 26.9 3.9 41.4z"></path></svg>
           )}
-          Sign Up with Google
+          Cadastre-se com o Google
         </Button>
         <div className="relative my-6">
           <Separator />
@@ -131,7 +131,7 @@ export default function SignupForm() {
           </div>
           <div className="relative flex justify-center text-xs uppercase">
             <span className="bg-card px-2 text-muted-foreground">
-              Or continue with email
+              Ou continue com o email
             </span>
           </div>
         </div>
@@ -142,9 +142,9 @@ export default function SignupForm() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>Nome</FormLabel>
                   <FormControl>
-                    <Input placeholder="Your Name" {...field} />
+                    <Input placeholder="Seu Nome" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -157,7 +157,7 @@ export default function SignupForm() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="you@example.com" {...field} />
+                    <Input placeholder="voce@exemplo.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -168,7 +168,7 @@ export default function SignupForm() {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Password</FormLabel>
+                  <FormLabel>Senha</FormLabel>
                   <FormControl>
                     <Input type="password" placeholder="••••••••" {...field} />
                   </FormControl>
@@ -180,16 +180,16 @@ export default function SignupForm() {
               {isLoading && (
                 <LoaderCircle className="mr-2 h-4 w-4 animate-spin" />
               )}
-              Create Account
+              Criar Conta
             </Button>
           </form>
         </Form>
       </CardContent>
       <CardFooter className="text-sm">
         <p className="w-full text-center text-muted-foreground">
-          Already have an account?{" "}
+          Já tem uma conta?{" "}
           <Link href="/login" className="font-medium text-primary hover:underline">
-            Log in
+            Entrar
           </Link>
         </p>
       </CardFooter>

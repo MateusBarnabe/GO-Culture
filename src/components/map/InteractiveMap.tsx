@@ -10,23 +10,12 @@ import { Badge } from "../ui/badge";
 import Link from "next/link";
 
 export default function InteractiveMap({ points }: { points: CulturalPoint[] }) {
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
   const [selectedPoint, setSelectedPoint] = useState<CulturalPoint | null>(null);
-
-  if (!apiKey) {
-    return (
-      <div className="flex h-full w-full items-center justify-center bg-muted">
-        <p className="text-destructive-foreground bg-destructive p-4 rounded-md">
-          Google Maps API key is missing. Please set NEXT_PUBLIC_GOOGLE_MAPS_API_KEY in your .env.local file.
-        </p>
-      </div>
-    );
-  }
 
   const mapCenter = { lat: 40.75, lng: -73.98 };
 
   return (
-    <APIProvider apiKey={apiKey}>
+    <APIProvider>
       <Map
         defaultCenter={mapCenter}
         defaultZoom={12}

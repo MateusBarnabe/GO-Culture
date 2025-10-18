@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "museum-1",
+      "description": "The grand facade of an art museum.",
+      "imageUrl": "https://images.unsplash.com/photo-1496889196885-5ddcec5eef4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhcnQlMjBtdXNldW18ZW58MHx8fHwxNzYwNzU1OTA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "art museum"
+    },
+    {
+      "id": "monument-1",
+      "description": "A tall, iconic monument against a clear sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1645070242384-316fdc26ee09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdGF0dWUlMjBsaWJlcnR5fGVufDB8fHx8MTc2MDc0MDM0NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "statue liberty"
+    },
+    {
+      "id": "historic-site-1",
+      "description": "An aerial view of a park built on an old railway.",
+      "imageUrl": "https://images.unsplash.com/photo-1561958501-4ef9547c43f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaXR5JTIwcGFya3xlbnwwfHx8fDE3NjA3NDgwNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city park"
+    },
+    {
+      "id": "art-installation-1",
+      "description": "A unique, modern architectural structure.",
+      "imageUrl": "https://images.unsplash.com/photo-1546349851-64285be8e9fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYwNzMxMDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "user-avatar-1",
+      "description": "User avatar.",
+      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjA3MzA4MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-2",
+      "description": "User avatar.",
+      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjA3MzA4MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    }
+  ]
 }

@@ -35,6 +35,12 @@
       "description": "User avatar.",
       "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjA3MzA4MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
+    },
+    {
+      "id": "map-goiania-1",
+      "description": "A map of Goiania.",
+      "imageUrl": "https://storage.googleapis.com/studiopaper-dev.appspot.com/6a153282-35ed-4e94-b040-39485b0d6205/1765089307775_map.png",
+      "imageHint": "city map"
     }
   ]
 }
